@@ -1,10 +1,10 @@
 let score = "shreyas"
 // console.log(typeof(score))
 let str = Number(score)
-// console.log(typeof(str))
+console.log(typeof(str))
 // /console.log(typeof(score))
 // console.log(typeof str);
-// console.log(str);
+console.log(str);
 
 let isloggedin = 1;
 let ans = Boolean(isloggedin);

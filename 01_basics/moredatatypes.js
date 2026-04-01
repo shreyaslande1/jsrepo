@@ -16,3 +16,20 @@ let func = function(a,b){
 }
 console.log(typeof func)
 func(8,9)
+
+let name1 = "shreyas"
+let name2 = name1
+name2 = "vidhi"
+
+console.log(name1)
+console.log(name2)
+
+let obj1 = {
+    name:"shreyas",
+    email:"shreyasslande200@gmail.com"
+}
+let obj2 = obj1
+obj2.name = "vidhi"
+console.log(obj1.name)
+console.log(obj2.name)
+ 
