@@ -18,7 +18,7 @@ obj1.email = "shreyaschatgpt@gmail.com"
 // Object.freeze(obj1)
 obj1.email = "shreyasmicro@gmail.com"
 // console.log(obj1["email"])
-
+obj1.x = "shreyas"
 obj1.greeting = function(){
     console.log("hello js users");
 }
@@ -27,3 +27,4 @@ obj1.greetingtwo = function(){
 }
 console.log(obj1.greeting())
 console.log(obj1.greetingtwo())
+console.log(obj1.x);

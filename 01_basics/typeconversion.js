@@ -3,12 +3,12 @@ let score = "shreyas"
 let str = Number(score)
 console.log(typeof(str))
 // /console.log(typeof(score))
-// console.log(typeof str);
+console.log(typeof str);
 console.log(str);
 
 let isloggedin = 1;
 let ans = Boolean(isloggedin);
-// console.log(ans);
+console.log(ans);
 
 
 let a = "2"+4+3

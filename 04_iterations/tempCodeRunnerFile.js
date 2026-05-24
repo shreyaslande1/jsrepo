@@ -10,19 +10,19 @@ const books = [
 ];
 let result = books.filter((val)=> val.genre ==="Fiction")
 result = books.filter((val)=> val.publish>=2000);
-// console.log(result);
+console.log(result);
 
 
 let arr = [1,2,3,4,5,6,7,8,9]
 const arr2 = arr.map((val)=>{
     return val=val+10;
 })
-// console.log(arr2);
+console.log(arr2);
 
 const arr3 = arr.map((val)=>{
     return val>4;
 })
-// console.log(arr3);
+console.log(arr3);
 
 const arr4 = arr.map((val)=>{return val*10})
                 .map((val)=>{return val+1;})
@@ -32,9 +32,9 @@ console.log(arr4)
 
 //reduce method
 let prices = [1,2,3,4,5]
-// const total = prices.reduce(function (accumulator, currentvalu){
-//     return accumulator+currentvalu
-// },0)
+const total = prices.reduce(function (accumulator, currentvalu){
+    return accumulator+currentvalu
+},0)
 const total = prices.reduce((acc,currval)=>acc+currval,0)
 console.log(total);
 

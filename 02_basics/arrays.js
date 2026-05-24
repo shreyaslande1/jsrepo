@@ -17,3 +17,4 @@ console.log("B ", arr)
 const newarr2 = arr.splice(1,3);
 console.log(newarr2)
 console.log("c ", arr)
+console.log(arr)

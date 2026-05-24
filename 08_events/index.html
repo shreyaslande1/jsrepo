@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightslategray;">
+    <div id="images">
+        <ul id = "images">
+            <li><img src="https://th.bing.com/th/id/R.ee512ff8c79f882d63e091af2a928946?rik=3ZW4YCVUvqP8wg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fAnimal-Leopard-HD-Wallpaper-High-Resolution.jpg&ehk=fxKq83sQxWjfTg8lHaSXCkbXayLQx6gw%2f8DEgz4jg%2bU%3d&risl=&pid=ImgRaw&r=0" width="200px" id="leopard" alt="leopard"></li>
+            <li><img src="https://th.bing.com/th/id/OIP.JsNTkOeJ8bQQ6Kqg2EDynwHaFj?w=254&h=190&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3" width="200px" id="zibra" alt="zibra"></li>
+            <li><img src="https://th.bing.com/th/id/OIP.tjtrk62dROo_jzB7TBIVUQHaFk?w=285&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3" width="200px" id="eagle" alt="eagle"></li>
+            <li><img src="https://th.bing.com/th/id/OIP.ADM7W-VjdKP1q_BTALpa5AHaHa?w=228&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3" width="200px" id="owl" alt="owl"></li>
+            <li><a style="color: aquamarine;" href="https://google.com" id = "google">google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.getElementById("images").addEventListener('click',function(e){
+        console.log("clicked images")
+        
+    })
+    document.getElementById("owl").addEventListener('click',function(e){
+        console.log("clicked owl")
+        // e.stopPropagation()
+    },false)
+    document.getElementById('google').addEventListener('click',function(e){
+        console.log("google clicked");
+        e.preventDefault()
+        e.stopPropagation()
+    },false)
+    document.querySelector("#images").addEventListener('click',function(e){
+        if(e.target.tagName==='IMG'){
+
+            let removeit = e.target.parentNode
+            removeit.parentNode.removeChild(removeit)
+        }
+    })
+</script>
+</html>
