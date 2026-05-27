@@ -10,28 +10,17 @@
     <button id="stop">stop</button>
 </body>
 <script>
-    setTimeout(function(){
-        console.log("sheyash print after 3 seconds");
-        
-    },3000)
-  
+    setTimeout(() => {
+        console.log("my name is shreyas")
+    }, 2000);
+    let changename = 
+        setTimeout(()=>{
+            document.querySelector("h1").innerText = "my name is shreyas"
+    },2000)
     
-    const sayshreyas = function(){
-        console.log("shreyas")
-    }
-    setTimeout(sayshreyas,3000)
     
-  
-    
-    const changetext = function(){
-        document.querySelector('h1').innerText = "my name is shreyas";
-    }
-    const stopped = setTimeout(changetext,4000)
-
-
-    document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(stopped)
-        console.log("sayshreyas stopped")
+    document.getElementById("stop").addEventListener('click', function(e){
+        clearTimeout(changename)
     })
 </script>
 </html>

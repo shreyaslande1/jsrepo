@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    const requesturl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requesturl)
+    // Add this header with your GitHub personal access token to avoid rate limiting
+    // xhr.setRequestHeader('Authorization', 'token YOUR_GITHUB_TOKEN_HERE')
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState===4){
+            if(xhr.status === 200){
+                const data = JSON.parse(this.responseText)
+                console.log(data)
+                console.log(typeof data);
+                console.log(data.following)
+            } else {
+                console.log('Error:', xhr.status, xhr.statusText)
+                console.log(this.responseText)
+            }
+        }
+    }
+    xhr.onerror = function(){
+        console.log('Request failed')
+    }
+    xhr.send();
+</script>
+</html>
