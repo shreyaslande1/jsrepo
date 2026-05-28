@@ -9,20 +9,20 @@ const heropower = {
         console.log(`the power of bat man is ${this.batman}`);
     }
 }
-
+const me = ["shreyas","vidhi"]
 Object.prototype.shreyas = function(){
     console.log("shreyas is present in all objects")
 }
-
 // heropower.shreyas()
 // allheros.shreyas()
 
 Array.prototype.vidhi = function(){
     console.log("vidhi is present in all objects")
 }
+me.vidhi()
 
 // heropower.vidhi()
-allheros.vidhi()
+// allheros.vidhi()
 
 
 //prototyple inheritance
